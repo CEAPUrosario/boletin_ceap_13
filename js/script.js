@@ -15,62 +15,144 @@ const nombreMeses = {
 // Clave: primeras 3 letras del mes en inglés + número (ej: jun1, jun2).
 // ============================================================
 const cursosDb = {
-    jul1: {
-        nombre: "Tutoría en Ambientes Virtuales de Aprendizaje",
+    sep1: {
+        nombre: "MOOC: IA generativa: Fundamentos y pensamiento crítico",
         modalidad: "Virtual",
-        fechas: "30 de julio al 30 de noviembre de 2026",
-        start: "20260730T080000",
-        end:   "20261130T170000",
-        reseña: "El curso analiza las competencias necesarias para desarrollar la tutoría virtual, así como los roles y funciones que debe desempeñar el tutor virtual para que su gestión sea exitosa. Las unidades representan el proceso que debe llevarse a cabo en el modelo de la universidad: alistamiento, implementación y cierre, en las cuales podrá reflexionar sobre los elementos fundamentales tales como la comunicación efectiva, la retroalimentación del aprendizaje y la evaluación, entre otros temas."
+        fechas: "01  al 16 de septiembre de 2026",
+        start: "20260901T080000",
+        end:   "20260916T170000",
+        reseña: "Curso tipo MOOC 100 % virtual nivel integrador, a desarrollarse a través de la plataforma EDX de URosarioX. Escenario formativo enfocado en brindar herramientas para comprender, analizar y utilizar la inteligencia artificial de manera crítica en contextos académicos y profesionales. Al finalizar el curso, el participante comprende como funciona la inteligencia artificial generativa a nivel conceptual; cómo interactuar con estos sistemas mediante prompts efectivos"
     },
-    jul2: {
-        nombre: "Enseñanza y Aprendizaje en Tiempos de Transformación",
+    sep2: {
+        nombre: "Reconocimiento de la inclusión como valor educativo: Estrategias educativas transformadoras",
         modalidad: "Virtual",
-        fechas: "30 de julio al 30 de noviembre de 2026",
-        start: "20260730T080000",
-        end:   "20261130T170000",
-        reseña: "Como parte del Modelo de Formación de Competencias Digitales para la Docencia, en este curso usted aprenderá a identificar fundamentos del enfoque pedagógico del aprender a aprender abordando las características, atributos y roles de las modalidades educativas en la UR. Para ampliar información sobre el modelo de competencias digitales consúltelo <a href='https://rosariorepositirio.s3.amazonaws.com/express/urosario/instancias/e-aulas/cursos/competencias-digitales-docentes/competencias-di' target='_blank'>aquí</a>."
+        fechas: "04 al 09 de septiembre de 2026",
+        start: "20260904T080000",
+        end:   "20260909T170000",
+        reseña: "Este curso ofrece espacios formativos, sensibles y de concientización que permiten ampliar la comprensión de la discapacidad, la educación inclusiva y su abordaje en el entorno académico. El propósito es formar docentes rosaristas que propicien la participación socio-ocupacional a estudiantes con discapacidad y neurodivergencias, eliminando barreras y promoviendo condiciones equitativas de aprendizaje."
     },
-    jul3: {
-        nombre: "Curso de Inducción al Enfoque Pedagógico del Aprender a Aprender",
-        modalidad: "Blended",
-        fechas: "17 de julio al 14 de agosto de 2026",
-        start: "20260717T080000",
-        end:   "20260814T170000",
-        reseña: "Este curso tiene el objetivo de introducir a los profesores de las diferentes unidades académicas en el enfoque pedagógico del aprender a aprender. En este curso los participantes podrán explorar las posibles aplicaciones de este enfoque al interior de su práctica pedagógica aterrizándolas a la guía de asignatura."
+    sep3: {
+        nombre: "Diseño e implementación de actividades de aprendizaje experiencial",
+        modalidad: "Virtual",
+        fechas: "07 de septiembre al 03 de octubre de 2026",
+        start: "20260907T080000",
+        end:   "20261003T170000",
+        reseña: "Este curso de Diseño e Implementación de Actividades de Aprendizaje Experiencial está dirigido a académicos que desean adquirir conocimiento y poner en práctica del aprendizaje experiencial. El programa se basa en los principios y prácticas de la teoría del aprendizaje experiencial de David Kolb. El aprendizaje experiencial es el contenido central del programa, y la aplicación del enfoque en su propia práctica, servirá como un proceso de aprender haciendo."
     },
-    jul4: {
-        nombre: "Taller 1, 2, 3 para Activar Moodle de Manera Eficiente",
+    sep4: {
+        nombre: "Taller rastreando la huella del estudiante en plataforma virtual",
         modalidad: "Acceso Remoto",
-        fechas: "30 de julio al 10 de agosto de 2026",
-        start: "20260730T080000",
-        end:   "20260810T170000",
-        reseña: "Orientación en tres pasos efectivos para activar las aulas virtuales de manera efectiva para las clases; a partir de: la personalización del entorno, adición de contenidos y primera actividad, y comunicación con estudiantes."
+        fechas: "09 de septiembre de 2026",
+        start: "20260909T080000",
+        end:   "20260909T080000",
+        reseña: "Sesión formativa orientada a mostrar las funcionalidades analíticas del aula virtual para favorecer la revisión de las acciones de participación de los estudiantes en las aulas virtuales, sus avances y gestiones para identificar orientaciones de éxito y riesgo académico a través de los reportes se generar a partir a huella digital que deja toda actividad que el estudiante realiza en el ambiente virtual para el aprendizaje."
+    },
+      sep5: {
+        nombre: "Aprender con emoción",
+        modalidad: "Acceso Remoto",
+        fechas: "15 al 22 de septiembre de 2026",
+        start: "20260915T080000",
+        end:   "20260922T080000",
+        reseña: "Conocer y comprender las bases de la educación emocional aprendiendo sobre estrategias pedagógicas para dinamizarla en el aula. Se busca que los participantes comprendan la importancia de la educación emocional a partir de la problematización del concepto tradicional y actual de la educación, que conozcan las bases conceptuales de la educación emocional en términos de la inteligencia emocional, la motivación, la comunicación y el reconocimiento del cuerpo."
+    },
+        sep6: {
+        nombre: "Emociónate y comunica desde la inteligencia",
+        modalidad: "Presencial",
+        fechas: "16 al 23 de septiembre de 2026",
+        start: "20260916T080000",
+        end:   "20260923T080000",
+        reseña: "Favorecer en los docentes de educación superior la capacidad de una comunicación asertiva y manejo adecuado de las emociones con sus estudiantes dentro del aula de clase, por medio de su participación en un taller que pretende reconocer la importancia de estos dos factores y la aplicación de estrategias prácticas."
+    },
+          sep7: {
+        nombre: "MOOC: IA estratégica para futuros líderes",
+        modalidad: "Virtual",
+        fechas: "22 de septiembre al 07 de octubre de 2026",
+        start: "20260922T080000",
+        end:   "20261007T080000",
+        reseña: "Curso tipo MOOC 100 por ciento virtual (nivel experto), a desarrollarse a través de la plataforma EDX de URosarioX. En este curso desarrollaran habilidades para utilizar la inteligencia artificial generativa como una herramienta estratégica en el análisis de información y la toma de decisiones en contextos empresariales. Al finalizar, el participante es capaz de integrar modelos de colaboración humano-IA en procesos de análisis y toma de decisiones; extraer y analizar información proveniente."
+    },
+            sep8: {
+        nombre: "MOOC: criterio y ética ante la ia generativa",
+        modalidad: "Virtual",
+        fechas: "22 de septiembre al 07 de octubre de 2026",
+        start: "20260922T080000",
+        end:   "20261007T080000",
+        reseña: "Curso tipo MOOC 100 por ciento virtual nivel experto, escenario que potencia habilidades para comprender, evaluar y utilizar la inteligencia artificial generativa con criterio ético, epistemológico y profesional. el Participante reconocerá como estos sistemas producen información, qué riesgos implica su uso y cómo establecer controles para integrarlos responsablemente en contextos reales. Al finalizar, estará en la capacidad de diferenciar entre IA predictiva y IA generativa"
+    },
+              sep9: {
+        nombre: "MOOC: IA generativa en el flujo de trabajo científico",
+        modalidad: "Virtual",
+        fechas: "22 de septiembre al 07 de octubre de 2026",
+        start: "20260922T080000",
+        end:   "20261007T080000",
+        reseña: "Curso tipo MOOC 100 por ciento virtual nivel experto, escenario que potencia habilidades para utilizar la inteligencia artificial generativa de manera crítica, ética y estratégica en los procesos de investigación. Explorará herramientas y metodologías para optimizar la búsqueda, organización, análisis y comunicación del conocimiento científico mediante arquitecturas RAG, motores semánticos y técnicas avanzadas de prompting. Además, desarrollará criterios para evaluar la calidad de la información."
+    },
+                sep10: {
+        nombre: "Creatividad y bienestar en el aula",
+        modalidad: "Pesencial",
+        fechas: "25 de septiembre de 2026",
+        start: "20260925T080000",
+        end:   "20260925T080000",
+        reseña: "Este curso propone la creatividad como una vía para el bienestar en el aula. Parte de la idea de que enseñar y aprender son experiencias atravesadas por lo emocional, y que el aula puede convertirse en un espacio de cuidado, expresión y regulación cuando se habilitan lenguajes distintos como los artísticos. A través de experiencias creativas sencillas y transferibles, el taller invita a los docentes a explorar estrategias que favorecen la conexión consigo mismos y con sus estudiantes."
+    },
+                  sep11: {
+        nombre: "Ambientes de enseñanza y aprendizaje mediados por tecnologías",
+        modalidad: "Virtual",
+        fechas: "30 de septiembre al 20 de octubre de 2026",
+        start: "20260930T080000",
+        end:   "20261020T080000",
+        reseña: "Como parte del Modelo de Formación de Competencias Digitales para la Docencia, en este curso usted aprenderá sobre tendencias educativas, metodologías emergentes y gestión de entornos virtuales y mejorar la práctica docente mediante el uso eficaz de tecnologías educativas con enfoque pedagógico. Este escenario propicia la reflexión sobre cómo potenciar cambios educativos en el aula universitaria."
+    },
+                    sep12: {
+        nombre: "Taller de estrategia de evaluación con rúbrica: gestione calificación avanzada",
+        modalidad: "Acceso Remoto",
+        fechas: "30 de septiembre  de 2026",
+        start: "20260930T080000",
+        end:   "20260930T080000",
+        reseña: "Sesión formativa de la Dirección de Educación Digital para orientar sobre las funcionalidades de la calificación avanzada con rúbricas, a partir del uso automatizado de éstas como instrumento para la evaluación en módulos del aula virtual tipo Tarea,foro y Turnitin. En este taller se aprende a configurar, utilizar y evaluar utilizando la rúbrica o la guía de puntuación, sus ventajas, alcances y limitaciones cuando se incorporan en los ejercicios de una aula virtual para valorar los trabajos."
+    },
+                      oct1: {
+        nombre: "Enseñar con pasión = aprender con motivación",
+        modalidad: "Presencial",
+        fechas: "14 de octubre de 2026",
+        start: "20261014T080000",
+        end:   "20261014T080000",
+        reseña: "En este curso el profesor podrá comprender los mecanismos a través de los cuales funciona la motivación y cómo puede utilizarlos para incentivarse a sí mismo y de esta manera promover un clima estimulante en el aula que favorezca un aprendizaje entusiasta."
+    },
+                        oct2: {
+        nombre: "Atención de la emoción",
+        modalidad: "Presencial",
+        fechas: "21 al 28 de octubre de 2026",
+        start: "20261021T080000",
+        end:   "20261028T080000",
+        reseña: "Este es un espacio dirigido a los docentes para aprender sobre el abordaje de la conducta suicida como posible primer respondiente ante situaciones de alteración emocional e ideas de muerte, identificar factores de riesgo y hacer una referencia a entidades internas y externas pertinentes. Implementar un curso de desarrollo profesoral que profundice acerca de las estrategias requeridas para el abordaje inicial de la conducta suicida."
     },
 };
 
 // ============================================================
-// EDICIONES ANTERIORES: Agrega las URLs de las ediciones 6 y 11
-// cuando las tengas disponibles. La edición 12 se agrega al
-// finalizar y publicar este boletín.
+// EDICIONES ANTERIORES
 // ============================================================
 const edicionesDb = {
     "2024": [
         { num: 1,  mes: "Mayo",       url: "https://view.genially.com/65d609fc02fc23001485c6d3" },
-        { num: 2,  mes: "Julio",      url: "https://view.genially.com/66576e1b83017e001439b92a/guide-boletin-ceap-2" },
+        { num: 2,  mes: "Julio",      url: "https://view.genially.com/66576e1b83017e001439b92a" },
         { num: 3,  mes: "Septiembre", url: "https://view.genially.com/66576e24e13ee80015910065" },
         { num: 4,  mes: "Noviembre",  url: "https://view.genially.com/66ec71c33a7e60b9c0f1dc85" }
     ],
     "2025": [
-        { num: 5,  mes: "Marzo",      url: "https://view.genially.com/66ec71ba3b8ea7c3778e3ba1/guide-boletin-ceap-5" },
-        { num: 6,  mes: "<!-- MES -->", url: "<!-- URL EDICIÓN 6 -->" },  // PENDIENTE
-        { num: 7,  mes: "Julio",      url: "https://view.genially.com/687a7017a53aa8a1fa884de2/interactive-content-boletin-ceap-7" },
-        { num: 8,  mes: "Septiembre", url: "https://view.genially.com/687a7628a53aa8a1fa8c605f/interactive-content-boletin-ceap-8" },
-        { num: 9,  mes: "Diciembre",  url: "https://view.genially.com/687a7639e1934311030cd849/interactive-content-boletin-ceap-9" }
+        { num: 5,  mes: "Marzo",      url: "https://view.genially.com/66ec71ba3b8ea7c3778e3ba1" },
+        { num: 6,  mes: "Mayo", url: "https://view.genially.com/66ec71bd3a7e60b9c0f1d731" },
+        { num: 7,  mes: "Julio",      url: "https://view.genially.com/687a7017a53aa8a1fa884de2" },
+        { num: 8,  mes: "Septiembre", url: "https://view.genially.com/687a7628a53aa8a1fa8c605f" },
+        { num: 9,  mes: "Diciembre",  url: "https://view.genially.com/687a7639e1934311030cd849" }
     ],
+      "2026": [
+    ],
+
     "2026": [
-        { num: 11, mes: "<!-- MES -->", url: "<!-- URL EDICIÓN 11 -->" }, // PENDIENTE
-        // { num: 12, mes: "Junio", url: "<!-- URL EDICIÓN 12 -->" }      // Agregar al publicar
+        { num: 10, mes: "Febrero", url: "https://view.genially.com/687a76de92b3a499009ea61e" },
+        { num: 11, mes: "Abril",   url: "https://ceapurosario.github.io/boletin_ceap/" },
+        { num: 12, mes: "Julio",   url: "https://ceapurosario.github.io/boletin_ceap_12/" }
     ]
 };
 
@@ -341,7 +423,7 @@ window.openEventPopup = function(titulo, reseña) {
                     </a>`).join('') +
                 '</div></div>';
         }
-        openHelpModal("Archivo Histórico", html + '</div>');
+        openHelpModal("Visite las ediciones anteriores de nuestro boletín", html + '</div>');
 
     } else if (titulo === 'Contáctenos') {
         openHelpModal("Contáctenos", `
