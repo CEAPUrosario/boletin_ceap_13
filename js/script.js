@@ -152,7 +152,7 @@ const edicionesDb = {
     "2026": [
         { num: 10, mes: "Febrero", url: "https://view.genially.com/687a76de92b3a499009ea61e" },
         { num: 11, mes: "Abril",   url: "https://ceapurosario.github.io/boletin_ceap/" },
-        { num: 12, mes: "Julio",   url: "https://ceapurosario.github.io/boletin_ceap_12/" }
+        { num: 12, mes: "Julio",   url: "https://ceapurosario.github.io/boletin_ceap_13/" }
     ]
 };
 
