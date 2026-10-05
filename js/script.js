@@ -11,121 +11,96 @@ const nombreMeses = {
 };
 
 // ============================================================
-// CURSOS: Agrega o elimina entradas según la oferta de junio.
-// Clave: primeras 3 letras del mes en inglés + número (ej: jun1, jun2).
+// CURSOS
 // ============================================================
 const cursosDb = {
-    sep1: {
-        nombre: "MOOC: IA generativa: Fundamentos y pensamiento crítico",
-        modalidad: "Virtual",
-        fechas: "01  al 16 de septiembre de 2026",
-        start: "20260901T080000",
-        end:   "20260916T170000",
-        reseña: "Curso tipo MOOC 100 % virtual nivel integrador, a desarrollarse a través de la plataforma EDX de URosarioX. Escenario formativo enfocado en brindar herramientas para comprender, analizar y utilizar la inteligencia artificial de manera crítica en contextos académicos y profesionales. Al finalizar el curso, el participante comprende como funciona la inteligencia artificial generativa a nivel conceptual; cómo interactuar con estos sistemas mediante prompts efectivos"
-    },
-    sep2: {
-        nombre: "Reconocimiento de la inclusión como valor educativo: Estrategias educativas transformadoras",
-        modalidad: "Virtual",
-        fechas: "04 al 09 de septiembre de 2026",
-        start: "20260904T080000",
-        end:   "20260909T170000",
-        reseña: "Este curso ofrece espacios formativos, sensibles y de concientización que permiten ampliar la comprensión de la discapacidad, la educación inclusiva y su abordaje en el entorno académico. El propósito es formar docentes rosaristas que propicien la participación socio-ocupacional a estudiantes con discapacidad y neurodivergencias, eliminando barreras y promoviendo condiciones equitativas de aprendizaje."
-    },
-    sep3: {
-        nombre: "Diseño e implementación de actividades de aprendizaje experiencial",
-        modalidad: "Virtual",
-        fechas: "07 de septiembre al 03 de octubre de 2026",
-        start: "20260907T080000",
-        end:   "20261003T170000",
-        reseña: "Este curso de Diseño e Implementación de Actividades de Aprendizaje Experiencial está dirigido a académicos que desean adquirir conocimiento y poner en práctica del aprendizaje experiencial. El programa se basa en los principios y prácticas de la teoría del aprendizaje experiencial de David Kolb. El aprendizaje experiencial es el contenido central del programa, y la aplicación del enfoque en su propia práctica, servirá como un proceso de aprender haciendo."
-    },
-    sep4: {
-        nombre: "Taller rastreando la huella del estudiante en plataforma virtual",
+    oct1: {
+        nombre: "Explorar el conocimiento: IA para Mapeo y Brechas de Investigación",
         modalidad: "Acceso Remoto",
-        fechas: "09 de septiembre de 2026",
-        start: "20260909T080000",
-        end:   "20260909T080000",
-        reseña: "Sesión formativa orientada a mostrar las funcionalidades analíticas del aula virtual para favorecer la revisión de las acciones de participación de los estudiantes en las aulas virtuales, sus avances y gestiones para identificar orientaciones de éxito y riesgo académico a través de los reportes se generar a partir a huella digital que deja toda actividad que el estudiante realiza en el ambiente virtual para el aprendizaje."
-    },
-      sep5: {
-        nombre: "Aprender con emoción",
-        modalidad: "Acceso Remoto",
-        fechas: "15 al 22 de septiembre de 2026",
-        start: "20260915T080000",
-        end:   "20260922T080000",
-        reseña: "Conocer y comprender las bases de la educación emocional aprendiendo sobre estrategias pedagógicas para dinamizarla en el aula. Se busca que los participantes comprendan la importancia de la educación emocional a partir de la problematización del concepto tradicional y actual de la educación, que conozcan las bases conceptuales de la educación emocional en términos de la inteligencia emocional, la motivación, la comunicación y el reconocimiento del cuerpo."
-    },
-        sep6: {
-        nombre: "Emociónate y comunica desde la inteligencia",
-        modalidad: "Presencial",
-        fechas: "16 al 23 de septiembre de 2026",
-        start: "20260916T080000",
-        end:   "20260923T080000",
-        reseña: "Favorecer en los docentes de educación superior la capacidad de una comunicación asertiva y manejo adecuado de las emociones con sus estudiantes dentro del aula de clase, por medio de su participación en un taller que pretende reconocer la importancia de estos dos factores y la aplicación de estrategias prácticas."
-    },
-          sep7: {
-        nombre: "MOOC: IA estratégica para futuros líderes",
-        modalidad: "Virtual",
-        fechas: "22 de septiembre al 07 de octubre de 2026",
-        start: "20260922T080000",
-        end:   "20261007T080000",
-        reseña: "Curso tipo MOOC 100 por ciento virtual (nivel experto), a desarrollarse a través de la plataforma EDX de URosarioX. En este curso desarrollaran habilidades para utilizar la inteligencia artificial generativa como una herramienta estratégica en el análisis de información y la toma de decisiones en contextos empresariales. Al finalizar, el participante es capaz de integrar modelos de colaboración humano-IA en procesos de análisis y toma de decisiones; extraer y analizar información proveniente."
-    },
-            sep8: {
-        nombre: "MOOC: criterio y ética ante la ia generativa",
-        modalidad: "Virtual",
-        fechas: "22 de septiembre al 07 de octubre de 2026",
-        start: "20260922T080000",
-        end:   "20261007T080000",
-        reseña: "Curso tipo MOOC 100 por ciento virtual nivel experto, escenario que potencia habilidades para comprender, evaluar y utilizar la inteligencia artificial generativa con criterio ético, epistemológico y profesional. el Participante reconocerá como estos sistemas producen información, qué riesgos implica su uso y cómo establecer controles para integrarlos responsablemente en contextos reales. Al finalizar, estará en la capacidad de diferenciar entre IA predictiva y IA generativa"
-    },
-              sep9: {
-        nombre: "MOOC: IA generativa en el flujo de trabajo científico",
-        modalidad: "Virtual",
-        fechas: "22 de septiembre al 07 de octubre de 2026",
-        start: "20260922T080000",
-        end:   "20261007T080000",
-        reseña: "Curso tipo MOOC 100 por ciento virtual nivel experto, escenario que potencia habilidades para utilizar la inteligencia artificial generativa de manera crítica, ética y estratégica en los procesos de investigación. Explorará herramientas y metodologías para optimizar la búsqueda, organización, análisis y comunicación del conocimiento científico mediante arquitecturas RAG, motores semánticos y técnicas avanzadas de prompting. Además, desarrollará criterios para evaluar la calidad de la información."
-    },
-                sep10: {
-        nombre: "Creatividad y bienestar en el aula",
-        modalidad: "Pesencial",
-        fechas: "25 de septiembre de 2026",
-        start: "20260925T080000",
-        end:   "20260925T080000",
-        reseña: "Este curso propone la creatividad como una vía para el bienestar en el aula. Parte de la idea de que enseñar y aprender son experiencias atravesadas por lo emocional, y que el aula puede convertirse en un espacio de cuidado, expresión y regulación cuando se habilitan lenguajes distintos como los artísticos. A través de experiencias creativas sencillas y transferibles, el taller invita a los docentes a explorar estrategias que favorecen la conexión consigo mismos y con sus estudiantes."
-    },
-                  sep11: {
-        nombre: "Ambientes de enseñanza y aprendizaje mediados por tecnologías",
-        modalidad: "Virtual",
-        fechas: "30 de septiembre al 20 de octubre de 2026",
-        start: "20260930T080000",
+        fechas: "13 al 20 de octubre de 2026",
+        start: "20261013T080000",
         end:   "20261020T080000",
-        reseña: "Como parte del Modelo de Formación de Competencias Digitales para la Docencia, en este curso usted aprenderá sobre tendencias educativas, metodologías emergentes y gestión de entornos virtuales y mejorar la práctica docente mediante el uso eficaz de tecnologías educativas con enfoque pedagógico. Este escenario propicia la reflexión sobre cómo potenciar cambios educativos en el aula universitaria."
+        reseña: "Fortalecer las competencias para la búsqueda, análisis y mapeo de información científica y tecnológica mediante herramientas de inteligencia artificial, webscraping y bases de datos, orientadas a la identificación de brechas de conocimiento y oportunidades de investigación."
     },
-                    sep12: {
-        nombre: "Taller de estrategia de evaluación con rúbrica: gestione calificación avanzada",
-        modalidad: "Acceso Remoto",
-        fechas: "30 de septiembre  de 2026",
-        start: "20260930T080000",
-        end:   "20260930T080000",
-        reseña: "Sesión formativa de la Dirección de Educación Digital para orientar sobre las funcionalidades de la calificación avanzada con rúbricas, a partir del uso automatizado de éstas como instrumento para la evaluación en módulos del aula virtual tipo Tarea,foro y Turnitin. En este taller se aprende a configurar, utilizar y evaluar utilizando la rúbrica o la guía de puntuación, sus ventajas, alcances y limitaciones cuando se incorporan en los ejercicios de una aula virtual para valorar los trabajos."
-    },
-                      oct1: {
-        nombre: "Enseñar con pasión = aprender con motivación",
+    oct2: {
+        nombre: "Enseñar con Pasión = Aprender con Motivación",
         modalidad: "Presencial",
         fechas: "14 de octubre de 2026",
         start: "20261014T080000",
         end:   "20261014T080000",
         reseña: "En este curso el profesor podrá comprender los mecanismos a través de los cuales funciona la motivación y cómo puede utilizarlos para incentivarse a sí mismo y de esta manera promover un clima estimulante en el aula que favorezca un aprendizaje entusiasta."
     },
-                        oct2: {
-        nombre: "Atención de la emoción",
+    oct3: {
+        nombre: "MOOC IA Generativa Para la Innovación Docente",
+        modalidad: "Virtual",
+        fechas: "15 de octubre al 11 de noviembre de 2026",
+        start: "20261015T080000",
+        end:   "20261111T080000",
+        reseña: "Curso tipo MOOC 100 por ciento virtual nivel Innovador, a desarrollarse en la plataforma edX de URosarioX. Escenario que potencia las competencias del profesorado universitario para apropiar la IA Gen en sus prácticas educativas de manera pedagógica, crítica y segura. Mediante un enfoque aplicado, se explica como utilizar la IA como apoyo al diseño instruccional, establecer un método de evaluaciones a partir de evidencias de proceso y trazabilidad del aprendizaje con criterios."
+    },
+    oct4: {
+        nombre: "Creatividad y Bienestar en el Aula",
+        modalidad: "Acceso Remoto",
+        fechas: "15 al 25 de octubre de 2026",
+        start: "20261015T080000",
+        end:   "20261025T080000",
+        reseña: "Este curso propone la creatividad como una vía para el bienestar en el aula. Parte de la idea de que enseñar y aprender son experiencias atravesadas por lo emocional, y que el aula puede convertirse en un espacio de cuidado, expresión y regulación cuando se habilitan lenguajes distintos como los artísticos. A través de experiencias creativas sencillas y transferibles, el taller invita a los docentes a explorar estrategias que favorecen la conexión consigo mismos y con sus estudiantes."
+    },
+    oct5: {
+        nombre: "Atención de la Emoción",
         modalidad: "Presencial",
         fechas: "21 al 28 de octubre de 2026",
         start: "20261021T080000",
         end:   "20261028T080000",
         reseña: "Este es un espacio dirigido a los docentes para aprender sobre el abordaje de la conducta suicida como posible primer respondiente ante situaciones de alteración emocional e ideas de muerte, identificar factores de riesgo y hacer una referencia a entidades internas y externas pertinentes. Implementar un curso de desarrollo profesoral que profundice acerca de las estrategias requeridas para el abordaje inicial de la conducta suicida."
+    },
+    oct6: {
+        nombre: "Reconocimiento de la Inclusión Como Valor Educativo: Estrategias Educativas Transformadoras",
+        modalidad: "Virtual",
+        fechas: "23 de octubre al 27 de noviembre de 2026",
+        start: "20261023T080000",
+        end:   "20261127T080000",
+        reseña: "Este curso ofrece espacios formativos, sensibles y de concientización que permiten ampliar la comprensión de la discapacidad, la educación inclusiva y su abordaje en el entorno académico. El propósito es formar docentes rosaristas que propicien la participación socio-ocupacional a estudiantes con discapacidad y neurodivergencias, eliminando barreras y promoviendo condiciones equitativas de aprendizaje."
+    },
+    nov1: {
+        nombre: "Nooc: Competencias Para la Gestión de Herramientas en Aulas Virtuales",
+        modalidad: "Virtual",
+        fechas: "04 al 25 de noviembre de 2026",
+        start: "20261104T080000",
+        end:   "20261125T080000",
+        reseña: "Como parte del Modelo de Formación de Competencias Digitales para la Docencia, en este curso usted aprenderá a usar con enfoque pedagógico diversos servicios y herramientas de Moodle en nivel intermedio, para orientarlos hacia la creación de experiencias de aprendizaje significativas a través del aula virtual. La ruta de aprendizaje es de autoselección e incluye un acompañamiento tecnopedagógico como apoyo para potenciar los conocimientos de los participantes que gestionan entornos educativos."
+    },
+    nov2: {
+        nombre: "Ética Transversal: La Ética en el Aula y la Ética en la Docencia",
+        modalidad: "Blended",
+        fechas: "06 de noviembre al 08 de diciembre de 2026",
+        start: "20261106T080000",
+        end:   "20261208T080000",
+        reseña: "El Curso de desarrollo profesoral en ética transversal, abordará temas de ética básica, ética profesional, estrategias y pedagogías de enseñanza, así como criterios y mecanismos de evaluación ética. A lo largo del curso se espera que los participantes logren formular, en aplicación de lo estudiado, una estrategia de formación ética para desarrollar al interior de las asignaturas que orientan."
+    },
+    nov3: {
+        nombre: "Mooc E-Moderación Para Tutores Virtuales",
+        modalidad: "Virtual",
+        fechas: "10 al 30 de noviembre de 2026",
+        start: "20261110T080000",
+        end:   "20261130T080000",
+        reseña: "Este curso es virtual y de autoformación, con una duración de 12 horas, diseñado para fortalecer las competencias clave en la facilitación de entornos de aprendizaje en línea, iniciando con una exploración profunda del concepto de e-moderación, sus fundamentos teóricos, y el papel transformador del tutor virtual, a través de estrategias centradas en el cómo, el participante aprenderá a diseñar, facilitar y dinamizar actividades virtuales, optimizando el uso de herramientas comunicativas."
+    },
+    nov4: {
+        nombre: "Mooc Storytelling: Comunica tus Ideas con Impacto",
+        modalidad: "Virtual",
+        fechas: "10 al 30 de noviembre de 2026",
+        start: "20261110T080000",
+        end:   "20261130T080000",
+        reseña: "Este curso es virtual y de autoformación, con una duración de 24 horas, propone el storytelling como una herramienta pedagógica y estratégica que potencia la enseñanza, la innovación educativa y las competencias comunicativas en entornos digitales para el aprendizaje. A través del arte de narrar, el participante aprenderá a estructurar mensajes con propósito, generar conexión emocional con su audiencia y comunicar con claridad."
+    },
+    dec1: {
+        nombre: "Diversidad Sexual y de Género en el Aula",
+        modalidad: "Acceso Remoto",
+        fechas: "09 al 11 de diciembre de 2026",
+        start: "20261209T080000",
+        end:   "20261211T080000",
+        reseña: "La creciente visibilidad de disidencias sexo-genéricas y personas LGBTIQ+ en espacios educativos ha significado, con frecuencia, desafíos a la labor docente que demandan la adquisición de lenguajes y herramientas que permitan abordar prácticas discriminatorias en razón de la orientación sexual y la identidad de género. Por ello, este curso brinda elementos conceptuales y prácticos, orientados a la construcción de aulas más inclusivas y respetuosas de la diversidad sexual y de géneros."
     },
 };
 
@@ -141,14 +116,11 @@ const edicionesDb = {
     ],
     "2025": [
         { num: 5,  mes: "Marzo",      url: "https://view.genially.com/66ec71ba3b8ea7c3778e3ba1" },
-        { num: 6,  mes: "Mayo", url: "https://view.genially.com/66ec71bd3a7e60b9c0f1d731" },
+        { num: 6,  mes: "Mayo",       url: "https://view.genially.com/66ec71bd3a7e60b9c0f1d731" },
         { num: 7,  mes: "Julio",      url: "https://view.genially.com/687a7017a53aa8a1fa884de2" },
         { num: 8,  mes: "Septiembre", url: "https://view.genially.com/687a7628a53aa8a1fa8c605f" },
         { num: 9,  mes: "Diciembre",  url: "https://view.genially.com/687a7639e1934311030cd849" }
     ],
-      "2026": [
-    ],
-
     "2026": [
         { num: 10, mes: "Febrero", url: "https://view.genially.com/687a76de92b3a499009ea61e" },
         { num: 11, mes: "Abril",   url: "https://ceapurosario.github.io/boletin_ceap/" },
@@ -252,8 +224,6 @@ function setActiveSection(id) {
     setTimeout(revealElements, 100);
 }
 
-// Lee los IDs de las secciones directamente del HTML para que las flechas
-// funcionen automáticamente sin importar cuántas secciones haya.
 function inyectarFlechasNavegacion() {
     const idsSecciones = Array.from(document.querySelectorAll('main .section'))
                               .map(s => s.id)
@@ -269,7 +239,6 @@ function inyectarFlechasNavegacion() {
         const container = document.createElement('div');
         container.className = 'nav-arrows-container reveal';
 
-        // Botón "Anterior"
         const prevId     = index === 0 ? 'inicio' : idsSecciones[index - 1];
         const navBtnPrev = document.querySelector(`.nav-btn[data-section="${prevId}"]`);
         const btnPrev    = document.createElement('button');
@@ -278,7 +247,6 @@ function inyectarFlechasNavegacion() {
         btnPrev.onclick   = () => setActiveSection(prevId);
         container.appendChild(btnPrev);
 
-        // Botón "Siguiente" (solo si no es la última sección)
         if (index < idsSecciones.length - 1) {
             const nextId     = idsSecciones[index + 1];
             const navBtnNext = document.querySelector(`.nav-btn[data-section="${nextId}"]`);
@@ -392,11 +360,6 @@ function openHelpModal(titulo, html) {
     helpModal.classList.add("open");
 }
 
-// ============================================================
-// openEventPopup: función central para abrir cualquier popup.
-// Para agregar un popup nuevo en esta edición, añade un bloque
-// "else if (titulo === 'Tu título')" con su HTML correspondiente.
-// ============================================================
 window.openEventPopup = function(titulo, reseña) {
 
     if (titulo === 'Ediciones Anteriores') {
@@ -437,7 +400,6 @@ window.openEventPopup = function(titulo, reseña) {
         `);
 
     } else {
-        // Popup genérico: para cualquier botón que pase un título y HTML personalizado
         openHelpModal(titulo, `<div style="line-height:1.7;">${reseña}</div>`);
     }
 };
@@ -571,7 +533,6 @@ function reubicarElementosMovil() {
 
 // ============================================================
 // 15. POPUP PARA VIDEOS O IMÁGENES ADICIONALES
-// Úsala en cualquier botón: abrirPopUpActividad('Título', 'Descripción', 'video'|'imagen', 'URL')
 // ============================================================
 
 window.abrirPopUpActividad = function(titulo, descripcion, tipoMedia, urlMedia) {
